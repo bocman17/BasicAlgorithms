@@ -12,6 +12,7 @@ namespace BasicAlgorithms
         {
             Console.WriteLine(AddString("if else"));
             Console.WriteLine(AddString("else"));
+            Console.ReadLine();
         }
 
         // Write a C# Sharp program to create
