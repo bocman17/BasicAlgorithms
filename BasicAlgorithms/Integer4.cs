@@ -36,7 +36,8 @@ namespace BasicAlgorithms
         {
             //TODO
             if(list.Length != list.Distinct().Count()) { return 0; }
-            var nearest = list.Aggregate((current, next) => Math.Abs((long)current - n) < Math.Abs((long)next - n) ? current : next);
+            var nearest = list.Aggregate((current, next) => 
+            Math.Abs((long)current - n) < Math.Abs((long)next - n) ? current : next);
             return nearest;
         }
     }
