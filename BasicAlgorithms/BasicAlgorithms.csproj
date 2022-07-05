@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-	<StartupObject>BasicAlgorithms.String12</StartupObject>
+	<StartupObject>BasicAlgorithms.Bool14</StartupObject>
   </PropertyGroup>
 
 </Project>

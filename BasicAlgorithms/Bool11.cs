@@ -16,6 +16,8 @@ namespace BasicAlgorithms
             Console.WriteLine(CheckIfLastDigitEquals(12, 45));
             Console.WriteLine(CheckIfLastDigitEqualsInArr(12, 45,55));
             Console.WriteLine(CheckIfLastDigitEqualsInArr(15, 45,55,65,154785));
+            Console.WriteLine(CheckIfLastDigitEqualsInArr(1,2,3,4,10,20));
+            Console.WriteLine(CheckIfLastDigitEqualsInArr(new int[] { 15, 45, 55, 65, 154785 }));
             Console.ReadLine();
         }
         //Write a C# Sharp program to check if two given non-negative
