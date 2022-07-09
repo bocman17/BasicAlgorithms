@@ -14,6 +14,9 @@ namespace BasicAlgorithms
             Console.WriteLine(SumOfTwoInRange(2,17));
             Console.WriteLine(SumOfTwoInRange(22,17));
             Console.WriteLine(SumOfTwoInRange(20,0));
+            Console.WriteLine(SumOfArrInRange(new int[] {1,2,3}));
+            Console.WriteLine(SumOfArrInRange(new int[] {1,2,30}));
+            Console.WriteLine(SumOfArrInRange(new int[] {2,10,4}));
             Console.ReadLine();
         }
         //Write a C# Sharp program to compute the sum of the two given integers.
@@ -23,6 +26,12 @@ namespace BasicAlgorithms
             (int x, int y, int min = 10, int max = 20, int def = 30)
         {
             return x + y >= min && x + y <= max ? def : x + y;
+        }
+        public static int SumOfArrInRange
+            (int[] arr, int min = 10, int max = 20, int def = 30)
+        {
+            if (arr.Sum() >= min && arr.Sum() <= max) return def;
+            else return arr.Sum();
         }
     }
 }
