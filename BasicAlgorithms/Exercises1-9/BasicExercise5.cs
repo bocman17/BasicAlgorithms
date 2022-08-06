@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BasicAlgorithms
 {
-    internal class String1
+    internal class BasicExercise5
     {
         static void Main(string[] args)
         {
@@ -21,7 +21,7 @@ namespace BasicAlgorithms
 
         public static string AddString(string s, string param = "if")
         {
-            return s.StartsWith("if") ? s : $"{param} {s}";
+            return s.StartsWith(param) ? s : $"{param} {s}";
         }
     }
 }

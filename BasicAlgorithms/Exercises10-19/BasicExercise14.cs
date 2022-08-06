@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BasicAlgorithms
 {
-    internal class Bool6
+    internal class BasicExercise14
     {
         static void Main(string[] args)
         {
