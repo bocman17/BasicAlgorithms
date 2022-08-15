@@ -10,14 +10,14 @@ namespace BasicAlgorithms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(test(new int[] { 4,5,7 }));
-            Console.WriteLine(test(new int[] { 7,4,12 }));
-            Console.WriteLine(test(new int[] { 10, 10,12 }));
-            Console.WriteLine(test(new int[] { 18, 12, 12 }));
+            Console.WriteLine(Test(new int[] { 4,5,7 }));
+            Console.WriteLine(Test(new int[] { 7,4,12 }));
+            Console.WriteLine(Test(new int[] { 10, 10,12 }));
+            Console.WriteLine(Test(new int[] { 18, 12, 12 }));
         }
         //Write a C# Sharp program to compute the sum of three given integers.
         //If the two values are same return the third value. 
-        public static int test(int[] arr)
+        public static int Test(int[] arr)
         {
             HashSet<int> set = new HashSet<int>(arr);
 

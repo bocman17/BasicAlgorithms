@@ -10,8 +10,8 @@ namespace BasicAlgorithms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(AddString("if else"));
-            Console.WriteLine(AddString("else"));
+            Console.WriteLine(Test("if else"));
+            Console.WriteLine(Test("else"));
             Console.ReadLine();
         }
 
@@ -19,7 +19,7 @@ namespace BasicAlgorithms
         // a new string where 'if' is added to the front of a given string.
         // If the string already begins with 'if', return the string unchanged. 
 
-        public static string AddString(string s, string param = "if")
+        public static string Test(string s, string param = "if")
         {
             return s.StartsWith(param) ? s : $"{param} {s}";
         }

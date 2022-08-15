@@ -10,18 +10,18 @@ namespace BasicAlgorithms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(CheckIfAtLeastTwoElemsHaveSameLastDigit(11, 21, 31));
-            Console.WriteLine(CheckIfAtLeastTwoElemsHaveSameLastDigit(11, 22, 31));
-            Console.WriteLine(CheckIfAtLeastTwoElemsHaveSameLastDigit(11, 22, 33));
-            Console.WriteLine(CheckIfAtLeastTwoElemsHaveSameLastDigit(11, 22, 33,145,2226,333355551));
-            Console.WriteLine(CheckIfAtLeastTwoElemsHaveSameLastDigit(11, 22, 33,145,2226,333355558));
-            Console.WriteLine(CheckIfAtLeastTwoElemsHaveSameLastDigit(19, 22, 33,145,2226, 333355552));
+            Console.WriteLine(Test(11, 21, 31));
+            Console.WriteLine(Test(11, 22, 31));
+            Console.WriteLine(Test(11, 22, 33));
+            Console.WriteLine(Test(11, 22, 33,145,2226,333355551));
+            Console.WriteLine(Test(11, 22, 33,145,2226,333355558));
+            Console.WriteLine(Test(19, 22, 33,145,2226, 333355552));
             Console.ReadLine();
         }
         //  Write a C# Sharp program to check if two or more non-negative
         //  given integers have the same rightmost digit.
 
-        public static bool CheckIfAtLeastTwoElemsHaveSameLastDigit(params int[] n)
+        public static bool Test(params int[] n)
         {
             for (int i = 0; i < n.Length; i++)
             {

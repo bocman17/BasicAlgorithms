@@ -10,9 +10,9 @@ namespace BasicAlgorithms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(CheckIfStringContainsStringAtGivenIndex("Python", "yt", 1));
-            Console.WriteLine(CheckIfStringContainsStringAtGivenIndex("ytade", "yt", 1));
-            Console.WriteLine(CheckIfStringContainsStringAtGivenIndex("jsues", "yt", 1));
+            Console.WriteLine(Test("Python", "yt", 1));
+            Console.WriteLine(Test("ytade", "yt", 1));
+            Console.WriteLine(Test("jsues", "yt", 1));
             Console.ReadLine();
         }
 
@@ -20,7 +20,7 @@ namespace BasicAlgorithms
         //at index 1 in a given string. If it appears return a string
         //without 'yt' otherwise return the original string. 
 
-        public static string CheckIfStringContainsStringAtGivenIndex(string s, string compare, int index)
+        public static string Test(string s, string compare, int index)
         {
             if (s[index..].StartsWith(compare))
             {

@@ -10,27 +10,27 @@ namespace BasicAlgorithms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(CheckIf2NumbersAreInRange(20, 84));
-            Console.WriteLine(CheckIf2NumbersAreInRange(14, 50));
-            Console.WriteLine(CheckIf2NumbersAreInRange(11, 45));
-            Console.WriteLine(CheckIf2NumbersAreInRange(25, 40));
-            Console.WriteLine(CheckIfNumbersAreInRange(new int[] {20,20,20}));
-            Console.WriteLine(CheckIfNumbersAreInRange(new int[] {18,17,50}));
-            Console.WriteLine(CheckIfNumbersAreInRange(new int[] {50,78,-25,150}));
+            Console.WriteLine(Test(20, 84));
+            Console.WriteLine(Test(14, 50));
+            Console.WriteLine(Test(11, 45));
+            Console.WriteLine(Test(25, 40));
+            Console.WriteLine(Test(new int[] {20,20,20}));
+            Console.WriteLine(Test(new int[] {18,17,50}));
+            Console.WriteLine(Test(new int[] {50,78,-25,150}));
             Console.ReadLine();
         }
         // Write a C# Sharp program to check whether two given
         // integer values are in the range 20..50 inclusive.
         // Return true if 1 or other is in the said range otherwise false.
 
-        public static bool CheckIf2NumbersAreInRange
+        public static bool Test
             (int x, int y, int min = 20, int max = 50)
         {
             return (x >= min && x <= max && y < min || y > max) ||
                     (y >= min && y <= max && x < min || y > max);
         }
 
-        public static bool CheckIfNumbersAreInRange
+        public static bool Test
             (int[] n, int min = 20, int max = 50)
         {
             int count = 0;

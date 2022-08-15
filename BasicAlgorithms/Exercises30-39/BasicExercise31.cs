@@ -10,17 +10,17 @@ namespace BasicAlgorithms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(CountSubstringIfStartAndEndIsSameSubstring("abcdsab"));
-            Console.WriteLine(CountSubstringIfStartAndEndIsSameSubstring("abcdabab"));
-            Console.WriteLine(CountSubstringIfStartAndEndIsSameSubstring("abcabdabab"));
-            Console.WriteLine(CountSubstringIfStartAndEndIsSameSubstring("abcabd"));
+            Console.WriteLine(Test("abcdsab"));
+            Console.WriteLine(Test("abcdabab"));
+            Console.WriteLine(Test("abcabdabab"));
+            Console.WriteLine(Test("abcabd"));
             Console.ReadLine();
         }
         //Write a C# Sharp program to count a substring of length
         //2 appears in a given string and also as the last 2
         //characters of the string. Do not count the end substring.
 
-        public static int CountSubstringIfStartAndEndIsSameSubstring(string s, int n = 2)
+        public static int Test(string s, int n = 2)
         {
             int count = 0;
             var lastChars = s.Substring(s.Length - n);

@@ -10,15 +10,15 @@ namespace BasicAlgorithms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(NewStringFromOddChars("Python"));
-            Console.WriteLine(NewStringFromOddChars("PHP"));
-            Console.WriteLine(NewStringFromOddChars("JS"));
+            Console.WriteLine(Test("Python"));
+            Console.WriteLine(Test("PHP"));
+            Console.WriteLine(Test("JS"));
             Console.ReadLine();
         }
         //Write a C# Sharp program to create a new string made
         //of every other character starting with the first from a given string.
 
-        public static string NewStringFromOddChars(string s)
+        public static string Test(string s)
         {
             string output = string.Empty;
             for (int i = 0; i < s.Length; i++)

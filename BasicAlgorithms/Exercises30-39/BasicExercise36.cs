@@ -10,16 +10,16 @@ namespace BasicAlgorithms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(RemoveCharInStrExceptFirstAndLastChar("xxHxix", 'x'));
-            Console.WriteLine(RemoveCharInStrExceptFirstAndLastChar("abxdddca", 'a'));
-            Console.WriteLine(RemoveCharInStrExceptFirstAndLastChar("xabjbhtbb", 'b'));
+            Console.WriteLine(Test("xxHxix", 'x'));
+            Console.WriteLine(Test("abxdddca", 'a'));
+            Console.WriteLine(Test("xabjbhtbb", 'b'));
             Console.ReadLine();
         }
         // Write a C# Sharp program to create a new string
         // from a give string where a specified character have
         // been removed except starting and ending position of the given string.
 
-        public static string RemoveCharInStrExceptFirstAndLastChar(string s, char c)
+        public static string Test(string s, char c)
         {
             for (int i = 1; i < s.Length-1; i++)
             {

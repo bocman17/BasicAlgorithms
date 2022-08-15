@@ -10,10 +10,10 @@ namespace BasicAlgorithms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(AddCharsToFrontAndBack("Python"));
-            Console.WriteLine(AddCharsToFrontAndBack("JS"));
-            Console.WriteLine(AddCharsToFrontAndBack("Code"));
-            Console.WriteLine(AddCharsToFrontAndBack("1"));
+            Console.WriteLine(Test("Python"));
+            Console.WriteLine(Test("JS"));
+            Console.WriteLine(Test("Code"));
+            Console.WriteLine(Test("1"));
             Console.ReadLine();
         }
         // Write a C# Sharp program to create a new string taking the first 3
@@ -21,7 +21,7 @@ namespace BasicAlgorithms
         // added at both the front and back. If the given string length is less than 3,
         // use whatever characters are there.
 
-        public static string AddCharsToFrontAndBack(string s, int count = 3)
+        public static string Test(string s, int count = 3)
         {
             if(count >= s.Length)
             {

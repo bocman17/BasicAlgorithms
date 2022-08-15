@@ -10,12 +10,12 @@ namespace BasicAlgorithms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(test(new int[] { 11, 21 }));
-            Console.WriteLine(test(new int[] { 11, 20}));
-            Console.WriteLine(test(new int[] { 10, 10 }));
-            Console.WriteLine(test(new int[] { 10, 10,10,10,20 }));
-            Console.WriteLine(test(new int[] { 10, 10,10,10,10 }));
-            Console.WriteLine(test(new int[] { 7, 14,21,49,70 }));
+            Console.WriteLine(Test(new int[] { 11, 21 }));
+            Console.WriteLine(Test(new int[] { 11, 20}));
+            Console.WriteLine(Test(new int[] { 10, 10 }));
+            Console.WriteLine(Test(new int[] { 10, 10,10,10,20 }));
+            Console.WriteLine(Test(new int[] { 10, 10,10,10,10 }));
+            Console.WriteLine(Test(new int[] { 7, 14,21,49,70 }));
         }
 
         //Write a C# Sharp program to find the larger from two given integers. 
@@ -23,7 +23,7 @@ namespace BasicAlgorithms
         //then the return the smaller integer. If the two integers are the same,
         //return 0.
 
-        public static int test(int[] arr, int divider = 7)
+        public static int Test(int[] arr, int divider = 7)
         {
             if (arr.All(x => x == arr[0])) return 0;
 

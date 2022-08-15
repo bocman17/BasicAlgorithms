@@ -10,16 +10,16 @@ namespace BasicAlgorithms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(AddLastCharToFrontAndBack("Red"));
-            Console.WriteLine(AddLastCharToFrontAndBack("Green"));
-            Console.WriteLine(AddLastCharToFrontAndBack("1"));
+            Console.WriteLine(Test("Red"));
+            Console.WriteLine(Test("Green"));
+            Console.WriteLine(Test("1"));
             Console.ReadLine();
         }
 
         //Write a C# Sharp program to create a new string with the
         //last char added at the front and back of a given string of length 1 or more.
 
-        public static string AddLastCharToFrontAndBack(string s)
+        public static string Test(string s)
         {
             return s.Substring(s.Length - 1) + s + s.Substring(s.Length - 1);
         }

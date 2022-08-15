@@ -10,23 +10,18 @@ namespace BasicAlgorithms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(CheckIfNumsAreGreaterInSequence(1, 2, 3));
-            Console.WriteLine(CheckIfNumsAreGreaterInSequence(4, 5, 6));
-            Console.WriteLine(CheckIfNumsAreGreaterInSequence(-1, 1, 0));
-            Console.WriteLine(test(1,2,3,4,5,6,7,8));
-            Console.WriteLine(test(1,2,3,4,5,6,7,8,-1));
-            Console.WriteLine(test(20,30,25,5,1,101,150,22,20));
+            Console.WriteLine(Test(1, 2, 3));
+            Console.WriteLine(Test(4, 5, 6));
+            Console.WriteLine(Test(-1, 1, 0));
+            Console.WriteLine(Test(1,2,3,4,5,6,7,8));
+            Console.WriteLine(Test(1,2,3,4,5,6,7,8,-1));
+            Console.WriteLine(Test(20,30,25,5,1,101,150,22,20));
             Console.ReadLine();
         }
         // Write a C# Sharp program to check if y is greater
         // than x, and z is greater than y from three given integers x,y,z.
 
-        public static bool CheckIfNumsAreGreaterInSequence(int x, int y, int z)
-        {
-            return z > y && y > x;
-        }
-
-        public static bool test(params int[] n)
+        public static bool Test(params int[] n)
         {
             //for (int i = 0; i < n.Length - 1; i++)
             //{

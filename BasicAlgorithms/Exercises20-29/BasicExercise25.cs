@@ -10,16 +10,16 @@ namespace BasicAlgorithms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(CopyStringNtimes("JS", 2));
-            Console.WriteLine(CopyStringNtimes("JS", 3));
-            Console.WriteLine(CopyStringNtimes("JS", 1));
-            Console.WriteLine(CopyStringNtimes("daniel", 5));
+            Console.WriteLine(Test("JS", 2));
+            Console.WriteLine(Test("JS", 3));
+            Console.WriteLine(Test("JS", 1));
+            Console.WriteLine(Test("daniel", 5));
             Console.ReadLine();
         }
         //Write a C# Sharp program to create a new string which is n
         //(non-negative integer) copies of a given string.
 
-        public static string CopyStringNtimes(string s, int n)
+        public static string Test(string s, int n)
         {
             string output = string.Empty;
             for(int i = 0; i < n; i++)

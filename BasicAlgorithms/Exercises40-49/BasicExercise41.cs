@@ -10,20 +10,22 @@ namespace BasicAlgorithms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(CheckIfIntOrSumOrDiffIsN(new int[] { 5, 4 }));
-            Console.WriteLine(CheckIfIntOrSumOrDiffIsN(new int[] { 4, 3 }));
-            Console.WriteLine(CheckIfIntOrSumOrDiffIsN(new int[] { 1, 4 })); 
-            Console.WriteLine(CheckIfIntOrSumOrDiffIsN(new int[] { 30,1,1,8,4,7,3,1}));
-            Console.WriteLine(test(5, 4));
-            Console.WriteLine(test(4, 3));
-            Console.WriteLine(test(1, 4));
-            Console.WriteLine(test(6, 1));
+            Console.WriteLine(Test(new int[] { 5, 4 }));
+            Console.WriteLine(Test(new int[] { 4, 3 }));
+            Console.WriteLine(Test(new int[] { 1, 4 })); 
+            Console.WriteLine(Test(new int[] { 30,1,1,8,4,7,3,1}));
+            Console.WriteLine(Test(5, 4));
+            Console.WriteLine(Test(4, 3));
+            Console.WriteLine(Test(1, 4));
+            Console.WriteLine(Test(6, 1));
+            Console.WriteLine(Test(1, 6));
+            Console.WriteLine(Test(1, 8));
             Console.ReadLine();
         }
         //  Write a C# Sharp program that accept two integers
         //  and return true if either one is 5 or their sum or difference is 5
 
-        public static bool CheckIfIntOrSumOrDiffIsN(int[] arr, int n = 5)
+        public static bool Test(int[] arr, int n = 5)
         {
             foreach (var num in arr)
             {
@@ -43,9 +45,9 @@ namespace BasicAlgorithms
             else return false;
         }
 
-        public static bool test(int x, int y, int n = 5)
+        public static bool Test(int x, int y, int n = 5)
         {
-            return x == n || y == n || x + y == 5 || x - y == 5;
+            return x == n || y == n || x + y == 5 || x - y == 5 || y - x == 5;
         }
     }
 }

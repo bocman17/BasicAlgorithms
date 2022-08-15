@@ -10,14 +10,14 @@ namespace BasicAlgorithms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(CheckIfStringStartsWithString("C# Sharp", "C#"));
-            Console.WriteLine(CheckIfStringStartsWithString("C#", "C#"));
-            Console.WriteLine(CheckIfStringStartsWithString("C++", "C#"));
+            Console.WriteLine(Test("C# Sharp", "C#"));
+            Console.WriteLine(Test("C#", "C#"));
+            Console.WriteLine(Test("C++", "C#"));
             Console.ReadLine();
         }
         //Write a C# Sharp program to check if a given string starts with 'C#' or not.
 
-        public static bool CheckIfStringStartsWithString(string s, string toCheck)
+        public static bool Test(string s, string toCheck)
         {
             return s.StartsWith(toCheck);
         }

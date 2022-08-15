@@ -10,17 +10,17 @@ namespace BasicAlgorithms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(CheckIfIntIsMultiOf3or7(3));
-            Console.WriteLine(CheckIfIntIsMultiOf3or7(14));
-            Console.WriteLine(CheckIfIntIsMultiOf3or7(12));
-            Console.WriteLine(CheckIfIntIsMultiOf3or7(37));
+            Console.WriteLine(Test(3));
+            Console.WriteLine(Test(14));
+            Console.WriteLine(Test(12));
+            Console.WriteLine(Test(37));
             Console.ReadLine();
         }
 
         // Write a C# Sharp program to check if a given positive
         // number is a multiple of 3 or a multiple of 7.
 
-        public static bool CheckIfIntIsMultiOf3or7(int n)
+        public static bool Test(int n)
         {
             return n % 3 == 0 || n % 7 == 0;
         }

@@ -10,9 +10,9 @@ namespace BasicAlgorithms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(CopyFrontCharacters("abcd",3, 3));
-            Console.WriteLine(CopyFrontCharacters("JS"));
-            Console.WriteLine(CopyFrontCharacters("a"));
+            Console.WriteLine(Test("abcd",3, 3));
+            Console.WriteLine(Test("JS"));
+            Console.WriteLine(Test("a"));
             Console.ReadLine();
         }
 
@@ -20,7 +20,7 @@ namespace BasicAlgorithms
         //new string which is 4 copies of the 2 front characters of a given string.
         //If the given string length is less than 2 return the original string.
 
-        public static string CopyFrontCharacters(string s, int count = 4, int charsToCopy = 2)
+        public static string Test(string s, int count = 4, int charsToCopy = 2)
         {
             if (s.Length < charsToCopy) return s;
             else

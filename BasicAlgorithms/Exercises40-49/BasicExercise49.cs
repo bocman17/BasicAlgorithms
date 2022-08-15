@@ -10,10 +10,10 @@ namespace BasicAlgorithms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(CheckIfNSequenceIsInOrder(false, 1, 2, 3));
-            Console.WriteLine(CheckIfNSequenceIsInOrder(true, 4, 5, 6));
-            Console.WriteLine(CheckIfNSequenceIsInOrder(false, 10, 2, 30));
-            Console.WriteLine(CheckIfNSequenceIsInOrder(true, 10, 10, 30));
+            Console.WriteLine(Test(false, 1, 2, 3));
+            Console.WriteLine(Test(true, 4, 5, 6));
+            Console.WriteLine(Test(false, 10, 2, 30));
+            Console.WriteLine(Test(true, 10, 10, 30));
             Console.ReadLine();
         }
         // Write a C# Sharp program to check if three given numbers are in
@@ -21,7 +21,7 @@ namespace BasicAlgorithms
         // 4 ,5, 8 or 6, 6, 8.However,if a fourth parameter is true,
         // equality is allowed, such as 6, 6, 8 or 7, 7, 7.
 
-        public static bool CheckIfNSequenceIsInOrder(bool equal, params int[] n)
+        public static bool Test(bool equal, params int[] n)
         {
             if (!equal)
             {
@@ -38,7 +38,6 @@ namespace BasicAlgorithms
                 }
                 return true;
             }
-            
         }
     }
 }

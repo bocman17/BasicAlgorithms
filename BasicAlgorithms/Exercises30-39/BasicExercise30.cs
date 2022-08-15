@@ -10,15 +10,15 @@ namespace BasicAlgorithms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(ModifyString("abcd"));
-            Console.WriteLine(ModifyString("abc"));
-            Console.WriteLine(ModifyString("a"));
+            Console.WriteLine(Test("abcd"));
+            Console.WriteLine(Test("abc"));
+            Console.WriteLine(Test("a"));
             Console.ReadLine();
         }
         //Write a C# Sharp program to create a string like "aababcabcd"
         //from a given string "abcd". 
 
-        public static string ModifyString(string s)
+        public static string Test(string s)
         {
             string output = string.Empty;
             for (int i = 0; i < s.Length + 1; i++)

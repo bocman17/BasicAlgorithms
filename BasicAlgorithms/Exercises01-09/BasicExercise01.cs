@@ -10,16 +10,16 @@ namespace BasicAlgorithms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Sum(1, 2));
-            Console.WriteLine(Sum(3, 2));
-            Console.WriteLine(Sum(2, 2)); 
+            Console.WriteLine(Test(1, 2));
+            Console.WriteLine(Test(3, 2));
+            Console.WriteLine(Test(2, 2)); 
             Console.ReadLine();
         }
 
         //Write a C# Sharp program to compute the sum of the two given integer values.
         //If the two values are the same, then return triple their sum.
 
-        public static int Sum(int x, int y)
+        public static int Test(int x, int y)
         {
             return x == y ? (x + y) * 3 : x + y;
         }

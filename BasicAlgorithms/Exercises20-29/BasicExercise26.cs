@@ -10,9 +10,9 @@ namespace BasicAlgorithms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(CopySubStringNtimes("Python", 2));
-            Console.WriteLine(CopySubStringNtimes("Python", 3));
-            Console.WriteLine(CopySubStringNtimes("JS", 3));
+            Console.WriteLine(Test("Python", 2));
+            Console.WriteLine(Test("Python", 3));
+            Console.WriteLine(Test("JS", 3));
             Console.ReadLine();
         }
         //Write a C# Sharp program to create a new string which
@@ -20,7 +20,7 @@ namespace BasicAlgorithms
         //characters of a given string. If the length of the given
         //string is less than 3 then return n copies of the string.
 
-        public static string CopySubStringNtimes(string s, int n, int chars = 3)
+        public static string Test(string s, int n, int chars = 3)
         {
             string output = string.Empty;
 

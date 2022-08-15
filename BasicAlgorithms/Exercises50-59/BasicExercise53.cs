@@ -10,14 +10,14 @@ namespace BasicAlgorithms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(test(new int[] { 11, 21 }));
-            Console.WriteLine(test(new int[] { 11, 20 }));
-            Console.WriteLine(test(new int[] { 10, 10 }));
-            Console.WriteLine(test(new int[] { 10, 10, 10, 10, 20 }));
-            Console.WriteLine(test(new int[] { 10, 10, 10, 10, 10 }));
-            Console.WriteLine(test(new int[] { 7, 14, 21, 49, 70 }));
-            Console.WriteLine(test(new int[] { 123, 456, 789}));
-            Console.WriteLine(test(new int[] { 123, 456, 789, 111}));
+            Console.WriteLine(Test(new int[] { 11, 21 }));
+            Console.WriteLine(Test(new int[] { 11, 20 }));
+            Console.WriteLine(Test(new int[] { 10, 10 }));
+            Console.WriteLine(Test(new int[] { 10, 10, 10, 10, 20 }));
+            Console.WriteLine(Test(new int[] { 10, 10, 10, 10, 10 }));
+            Console.WriteLine(Test(new int[] { 7, 14, 21, 49, 70 }));
+            Console.WriteLine(Test(new int[] { 123, 456, 789}));
+            Console.WriteLine(Test(new int[] { 123, 456, 789, 111}));
 
         }
 
@@ -25,7 +25,7 @@ namespace BasicAlgorithms
         //each in the range 10..99. Return true if a digit appears 
         //in both numbers, such as the 3 in 13 and 33.
 
-        public static bool test(int[] arr)
+        public static bool Test(int[] arr)
         {
             string[] strArr = arr.Select(i => i.ToString()).ToArray();
             for (int i = 0; i < strArr.Length; i++)
