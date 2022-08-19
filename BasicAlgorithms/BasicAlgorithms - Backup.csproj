@@ -8,4 +8,8 @@
 	<StartupObject>BasicAlgorithms.BasicExercise119</StartupObject>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Exercises100-109\NewFolder\" />
+  </ItemGroup>
+
 </Project>
