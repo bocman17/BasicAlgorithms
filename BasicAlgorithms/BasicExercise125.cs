@@ -11,6 +11,8 @@ namespace BasicAlgorithms
         static void Main(string[] args)
         {
             Console.WriteLine(Test(new[] { 3, 7, 5, 5, 3, 7 }, 2));
+            Console.WriteLine(Test(new[] { 3, 7, 5, 5, 3, 7 }, 3));
+            Console.WriteLine(Test(new[] { 3, 7, 5, 5, 3, 7, 5 }, 3));
             Console.ReadLine();
         }
         // Write a C# Sharp program to check a given array of integers and
@@ -19,16 +21,11 @@ namespace BasicAlgorithms
 
         public static bool Test(int[] nums, int n)
         {
-            if (nums.First() == n && nums[1] != n) return false;
-            else if (nums.Last() == n && nums[^2] != n) return false;
-            else
+            for (int i = 0; i < n; i++)
             {
-                for (int i = 1; i < nums.Length - 1; i++)
-                {
-                    if (nums[i] == n && nums[i + 1] != n && nums[i - 1] != n) return false;
-                }
+                if (nums[i] == nums[nums.Length - n + i]) return true;
             }
-            return true;
+            return false;
         }
     }
 }
