@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-	<StartupObject>BasicAlgorithms.BasicExercise119</StartupObject>
+	<StartupObject>BasicAlgorithms.BasicExercise124</StartupObject>
   </PropertyGroup>
 
 </Project>
