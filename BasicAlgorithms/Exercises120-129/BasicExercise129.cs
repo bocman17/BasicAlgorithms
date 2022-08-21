@@ -12,7 +12,7 @@ namespace BasicAlgorithms
         {
             Console.WriteLine(Test(new[] { 10, 20, -30, -40, 50 }));
             Console.WriteLine(Test(new[] { 1, 2, 3, 5, 7 }));
-            Console.WriteLine(Test(new[] { 3, 7, 5, 5, 6, 7, 5 }));
+            Console.WriteLine(Test(new[] { 1, 2, 3, 5, 7, 9, 11 }));
             Console.ReadLine();
         }
         // Write a C# Sharp program to create a new array taking the elements after
@@ -24,7 +24,7 @@ namespace BasicAlgorithms
             if (index == -1) return String.Join(" ", nums);
             else
             {
-                int[] arr = nums.Take(index).ToArray();
+                int[] arr = nums.Skip(index + 1).ToArray();
                 return String.Join(" ", arr);
             }
         }
